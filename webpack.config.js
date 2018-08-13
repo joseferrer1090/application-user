@@ -11,7 +11,7 @@ module.exports = env => {
 
   return {
     entry: {
-      "application-user": path.resolve(__dirname, "index.js")
+      "application-user": path.resolve(__dirname, "./src/index.js")
     },
     output: {
       path: path.resolve(__dirname, "dist"),
