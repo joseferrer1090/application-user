@@ -31,7 +31,10 @@
         "webpack-dev-server": "2.9.3"
     },
     "dependencies": {
+        "bootstrap3": "^3.3.5",
+        "jquery": "^3.3.1",
         "react": "^16.4.2",
+        "react-bootstrap": "^0.32.1",
         "react-dom": "^16.4.2"
     }
 }
