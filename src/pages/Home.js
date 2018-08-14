@@ -1,10 +1,15 @@
 import React, { Component } from "react";
+import Top from "../components/Top/Top";
+import Footer from "../components/Footer/Footer";
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <p>Hola mundo</p>
+        <Top />
+        <div className="container">
+          <Footer />
+        </div>
       </div>
     );
   }
