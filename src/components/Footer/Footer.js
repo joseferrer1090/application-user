@@ -8,7 +8,10 @@ class Footer extends Component {
         <footer>
           <div className="row">
             <div className="col-lg-12">
-              <p>Copyright &copy; Your Website 2014</p>
+              <p>
+                Jose Carlos Ferrer &copy; test for{" "}
+                <a href="http://tuapplicacion.co/"> tu applicacion </a> 2018
+              </p>
             </div>
           </div>
         </footer>
