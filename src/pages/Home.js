@@ -13,27 +13,30 @@ class Home extends Component {
     };
   }
 
-  dataFetch = () => {
-    fetch(config.defaultURL + API_HASH)
-      .then(res => res.json())
-      .then(res => {
-        this.setState({
-          dataList: result
-        });
-      });
-  };
+  dataFetch() {
+    fetch(config.defaultURL + API_HASH).then(response =>
+      response.json().then(data => {
+        if (response.ok) {
+          this.setState({
+            dataList: data
+          });
+        }
+      })
+    );
+  }
 
   componentDidMount() {
     this.dataFetch();
-    console.log(this.state.dataList);
   }
 
   render() {
+    const aux_data = this.state.dataList;
     return (
       <div>
         <Top />
         <div className="container">
           <p> Los datos desde el fetch </p>
+          {console.log(aux_data)}
           <Footer />
         </div>
       </div>
